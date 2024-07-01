@@ -50,7 +50,7 @@ const Navbar = () => {
           <img src={Logo} alt="" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <img src={showNavbar ? XMark : Hamburger} alt="" width={35} />
+          <img src={showNavbar ? XMark : Hamburger} alt="" />
         </div>
         <div
           className={`nav-elements border-radius-1  ${showNavbar && "active"} `}

@@ -1,0 +1,10 @@
+.conatainer-main {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 720px) {
+  .conatainer-main {
+  }
+}

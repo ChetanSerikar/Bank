@@ -1,6 +1,6 @@
 @use "../base" as *;
 .nav_container {
-  max-width: 1399px;
+  max-width: 1280px;
   margin: 0 auto;
 
   display: flex;
@@ -81,11 +81,18 @@
 @media (max-width: 850px) {
   .nav_container {
     margin: 0 1rem;
+    background-color: var(--neutral-11);
   }
   .menu-icon {
     display: block;
     cursor: pointer;
-    margin-right: 1rem;
+    // margin-right: 0.875rem;
+    background-color: var(--primary-60);
+    padding: 0.375rem 0.875rem;
+    border-radius: 5.125rem;
+    // height: 28px;
+    // width: 28px;
+    font-weight: bold;
   }
 
   .nav-elements {
@@ -93,10 +100,10 @@
     z-index: 99;
     right: -10px;
     top: 60px;
-    background-color: var(--primary-300);
+
     width: 0px;
     height: calc(100vh - 60px);
-    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in-out;
     overflow: hidden;
   }
 
@@ -118,10 +125,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: none;
     width: 100%;
-    border-bottom: 2px solid var(--neutral-700);
     height: 100%;
     padding: 1rem 1.25rem;
+    margin: 0 2rem;
   }
 }

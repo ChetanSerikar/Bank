@@ -1,11 +1,16 @@
 @use "../abstracts/" as *;
 
-.#{$prefix} {
-  &fw-regular {
-    font-weight: $font-weight-default;
-  }
+.fw-regular {
+  font-weight: $font-weight-default;
+}
+.fw-medium {
+  font-weight: 500;
+}
 
-  &fw-bold {
-    font-weight: $font-weight-bold;
-  }
+.fw-bold {
+  font-weight: $font-weight-bold;
+}
+
+.fw-light {
+  font-weight: 300;
 }
