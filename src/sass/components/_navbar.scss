@@ -1,0 +1,127 @@
+@use "../base" as *;
+.nav_container {
+  max-width: 1399px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: var(--neutral-11);
+  border: 2px solid var(--neutral-15);
+  border-radius: 100px;
+  padding: 1rem 1.625rem;
+  overflow: hidden;
+}
+
+.navbar {
+  height: 60px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.logo {
+  background-color: var(--neutral-11);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: max-content;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+}
+
+.nav-elements ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-elements ul li {
+  margin-right: 1.625rem;
+  padding: 0.625rem 1.125rem;
+  transition: background-color 0.5s ease-in-out;
+}
+.nav-elements ul li.active {
+  border-radius: 82px;
+  border: 1px solid;
+  border-color: var(--neutral-15);
+  background-color: var(--neutral-15);
+}
+
+.nav-elements ul a {
+}
+
+.nav-elements ul li:hover {
+  position: relative;
+}
+
+// .nav-elements ul a.active::after {
+//   content: "";
+//   position: absolute;
+//   bottom: -4px;
+//   left: 0;
+//   width: 100%;
+//   height: 2px;
+//   // background-color: #574c4c;
+// }
+
+@media (max-width: 768px) {
+  //   .nav-elements ul li:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
+}
+
+@media (max-width: 850px) {
+  .nav_container {
+    margin: 0 1rem;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  .nav-elements {
+    position: fixed;
+    z-index: 99;
+    right: -10px;
+    top: 60px;
+    background-color: var(--primary-300);
+    width: 0px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .nav-elements.active {
+    width: 100%;
+    right: 0;
+    border: 2px solid var(--neutral-700);
+    border-radius: 8px;
+  }
+
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-elements ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: none;
+    width: 100%;
+    border-bottom: 2px solid var(--neutral-700);
+    height: 100%;
+    padding: 1rem 1.25rem;
+  }
+}

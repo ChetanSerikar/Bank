@@ -1,0 +1,152 @@
+// global color tokens
+$-clr-white: hsl(0 0% 100%);
+$-clr-white-90: hsl(0 0% 90%);
+$-clr-white-95: hsl(0 0% 95%);
+$-clr-white-97: hsl(0 0% 97%);
+$-clr-white-99: hsl(0 0% 99%);
+$-clr-gray-10: hsl(0, 0%, 10%);
+$-clr-gray-11: hsl(0, 0%, 11%);
+$-clr-gray-15: hsl(0, 0%, 15%);
+$-clr-gray-20: hsl(0, 0%, 20%);
+$-clr-gray-30: hsl(0, 0%, 30%);
+$-clr-gray-35: hsl(0, 0%, 35%);
+$-clr-gray-40: hsl(0, 0%, 40%);
+$-clr-gray-60: hsl(0, 0%, 60%);
+$-clr-gray-70: hsl(0, 0%, 70%);
+$-clr-gray-75: hsl(0, 0%, 75%);
+$-clr-black: hsl(0 0% 0%);
+$-clr-green-60: hsl(96 75% 60%);
+$-clr-green-65: hsl(96 75% 65%);
+$-clr-green-70: hsl(96 75% 70%);
+$-clr-green-80: hsl(96 75% 80%);
+$-clr-green-90: hsl(96 75% 90%);
+$-clr-green-95: hsl(96 75% 95%);
+$-clr-green-97: hsl(96 75% 97%);
+$-clr-green-99: hsl(96 75% 99%);
+
+$light: (
+  "neutral": (
+    "10": $-clr-gray-10,
+    "11": $-clr-gray-11,
+    "15": $-clr-gray-15,
+    "20": $-clr-gray-20,
+    "30": $-clr-gray-30,
+    "35": $-clr-gray-35,
+    "40": $-clr-gray-40,
+    "60": $-clr-gray-60,
+    "70": $-clr-gray-70,
+    "75": $-clr-gray-75,
+  ),
+  "accent": (
+    "10": $-clr-gray-10,
+    "11": $-clr-gray-11,
+    "15": $-clr-gray-15,
+    "20": $-clr-gray-20,
+    "30": $-clr-gray-30,
+    "35": $-clr-gray-35,
+    "40": $-clr-gray-40,
+    "60": $-clr-gray-60,
+    "70": $-clr-gray-70,
+    "75": $-clr-gray-75,
+    "90": $-clr-white-90,
+    "95": $-clr-white-95,
+    "97": $-clr-white-97,
+    "99": $-clr-white-99,
+    "100": $-clr-white,
+  ),
+  "primary": (
+    "60": $-clr-green-60,
+    "65": $-clr-green-65,
+    "70": $-clr-green-70,
+    "80": $-clr-green-80,
+    "90": $-clr-green-90,
+    "95": $-clr-green-95,
+    "97": $-clr-green-97,
+    "99": $-clr-green-99,
+  ),
+);
+
+// $dark: (
+//   "neutral": (
+//     "1000": $-clr-white,
+//     "900": $-clr-gray-100,
+//     "800": $-clr-gray-200,
+//     "700": $-clr-gray-300,
+//     "600": $-clr-gray-400,
+//     "500": $-clr-gray-500,
+//     "400": $-clr-gray-600,
+//     "300": $-clr-gray-700,
+//     "200": $-clr-gray-800,
+//     "100": $-clr-gray-900,
+//     "000": $-clr-black,
+//   ),
+//   "accent": (
+//     "900": $-clr-deeppink-900,
+//     "800": $-clr-deeppink-800,
+//     "700": $-clr-deeppink-700,
+//     "600": $-clr-deeppink-600,
+//     "500": $-clr-deeppink-500,
+//     "400": $-clr-deeppink-400,
+//     "300": $-clr-deeppink-300,
+//     "200": $-clr-deeppink-200,
+//     "100": $-clr-deeppink-100,
+//   ),
+//   "primary": (
+//     "900": $-clr-skyblue-900,
+//     "800": $-clr-skyblue-800,
+//     "700": $-clr-skyblue-700,
+//     "600": $-clr-skyblue-600,
+//     "500": $-clr-skyblue-500,
+//     "400": $-clr-skyblue-400,
+//     "300": $-clr-skyblue-300,
+//     "200": $-clr-skyblue-200,
+//     "100": $-clr-skyblue-100,
+//   ),
+// );
+
+// contextual color tokens
+$color-primary-60: var(--primary-60);
+$color-primary-65: var(--primary-65);
+$color-primary-70: var(--primary-70);
+$color-primary-80: var(--primary-80);
+$color-primary-90: var(--primary-90);
+$color-primary-95: var(--primary-95);
+$color-primary-97: var(--primary-97);
+$color-primary-99: var(--primary-99);
+
+$color-neutral-10: var(--neutral-10);
+$color-neutral-11: var(--neutral-11);
+$color-neutral-15: var(--neutral-15);
+$color-neutral-20: var(--neutral-20);
+$color-neutral-30: var(--neutral-30);
+$color-neutral-35: var(--neutral-35);
+$color-neutral-40: var(--neutral-40);
+$color-neutral-60: var(--neutral-60);
+$color-neutral-70: var(--neutral-70);
+$color-neutral-77: var(--neutral-75);
+
+$color-accent-10: var(--neutral-10);
+$color-accent-11: var(--neutral-11);
+$color-accent-15: var(--neutral-15);
+$color-accent-20: var(--neutral-20);
+$color-accent-30: var(--neutral-30);
+$color-accent-35: var(--neutral-35);
+$color-accent-40: var(--neutral-40);
+$color-accent-60: var(--neutral-60);
+$color-accent-70: var(--neutral-70);
+$color-accent-77: var(--neutral-75);
+$color-accent-90: var(--accent-90);
+$color-accent-95: var(--accent-95);
+$color-accent-97: var(--accent-97);
+$color-accent-99: var(--accent-99);
+$color-accent-100: var(--accent-100);
+
+// $color-accent-100: var(--accent-100);
+// $color-accent-200: var(--accent-200);
+// $color-accent-300: var(--accent-300);
+// $color-accent-400: var(--accent-400);
+// $color-accent-500: var(--accent-500);
+// $color-accent-600: var(--accent-600);
+// $color-accent-700: var(--accent-700);
+// $color-accent-800: var(--accent-800);
+// $color-accent-900: var(--accent-900);
